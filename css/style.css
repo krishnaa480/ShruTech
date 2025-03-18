@@ -1,0 +1,69 @@
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease-out;
+}
+
+.logo-shru {
+    width:15vw;
+}
+#landing-page {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f4f8; /* Optional: Add a light background color */
+}
+
+/* Custom animation for sliding */
+ @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  .animate-slide {
+    animation: slide 20s linear infinite;
+  }
+
+
+/* Custom animation for increasing numbers */
+@keyframes countUp {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.animate-count {
+    animation: countUp 2s ease-out forwards;
+}
+
+/* Custom animation for sliding */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+.animate-slide {
+    animation: slide 20s linear infinite;
+}
+
+.special-tech-heading {
+    font-size:3vw;
+}
+
+.icon-container {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .icon-container:hover {
+    transform: scale(1.1);
+  }
+
+@media screen and (max-width: 768px) {
+    .logo-shru {
+        width:45vw;
+    }
+    .welcome-heading {
+        font-size: 13vw;
+    }
+    .special-tech-heading {
+        font-size: 6vw;
+        padding:3vw;
+    }
+    .our-achievements-heading {
+        font-size: 6vw;
+    }
+}
